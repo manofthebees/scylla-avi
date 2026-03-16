@@ -1,0 +1,7 @@
+config SHIELD_SCYLLA-AVI_LEFT
+    def_bool $(shields_list_contains,scylla-avi_left)
+    select SHIELD_SCYLLA-AVI
+
+config SHIELD_SCYLLA-AVI_RIGHT
+    def_bool $(shields_list_contains,scylla-avi_right)
+    select SHIELD_SCYLLA-AVI

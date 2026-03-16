@@ -1,0 +1,11 @@
+file_format: "1"
+id: scylla-avi
+name: scylla-avi
+type: shield
+url: https://github.com/manofthebees/scylla-avi
+requires: [nice_nano_v2]
+features:
+  -keys
+siblings:
+  - scylla-avi_left
+  - scylla-avi_right

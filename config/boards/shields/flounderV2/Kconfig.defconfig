@@ -1,0 +1,16 @@
+if SHIELD_SCYLLA-AVI_LEFT
+ 
+config ZMK_KEYBOARD_NAME
+    default "scylla-avi"
+ 
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+ 
+endif
+ 
+if SHIELD_SCYLLA-AVI_LEFT || SHIELD_SCYLLA-AVI_RIGHT
+ 
+config ZMK_SPLIT
+    default y
+ 
+endif
