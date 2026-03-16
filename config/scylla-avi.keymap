@@ -1,12 +1,9 @@
 #include <behaviors/mouse_keys.dtsi>
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1650  // default is 600
-
 
 / {
     keymap {
@@ -14,13 +11,12 @@
 
         alpha {
             bindings = <
-&kp Q &kp Q  &kp W                       &kp E  &kp R           &kp T             &kp Y             &kp U     &kp I      &kp O                       &kp Q &kp P
-&kp A &kp A  &tap_hol_kp LEFT_CONTROL S  &kp D  &kp F           &kp G             &kp H             &kp J     &kp K      &tap_hol_kp RIGHT_CONTROL L &kp A &kp SQT
-&kp Z &kp Z  &kp X                       &kp C  &kp V           &kp B             &kp N             &kp M     &kp COMMA  &kp DOT                     &kp Z &kp FSLH
-&kp Z &kp Z  &kp X                       &kp C  &kp V           &kp B             &kp N             &kp M     &kp COMMA  &kp DOT                     &kp Z &kp FSLH
-
-                                          &kp LEFT_SHIFT  &kp SPACE  &kp B  &kp BSPC &kp BSPC &kp BSPC
-                                          &kp BSPC &kp BSPC &kp BSPC &kp BSPC
+&kp GRAVE  &kp N1  &kp N2  &kp N3          &kp N4     &kp N5     &kp N6     &kp N7    &kp N8     &kp N9   &kp N0    &kp MINUS
+&kp ESC    &kp Q   &kp W   &kp E           &kp R      &kp T      &kp Y      &kp U     &kp I      &kp O    &kp P     &kp BSLH
+&kp HOME   &kp A   &kp S   &kp D           &kp F      &kp G      &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp PG_UP
+&kp END    &kp Z   &kp X   &kp C           &kp V      &kp B      &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp PG_DN
+                           &kp LEFT_SHIFT  &kp SPACE  &kp LCTRL  &kp LCTRL  &kp RET   &kp BSPC
+                                           &kp DEL    &kp LALT   &kp RALT   &kp LGUI
             >;
         };
     };
