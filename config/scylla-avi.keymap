@@ -12,9 +12,31 @@
 &kp GRAVE  &kp N1  &kp N2  &kp N3          &kp N4     &kp N5     &kp N6     &kp N7    &kp N8     &kp N9   &kp N0    &kp MINUS
 &kp ESC    &kp Q   &kp W   &kp E           &kp R      &kp T      &kp Y      &kp U     &kp I      &kp O    &kp P     &kp BSLH
 &kp HOME   &kp A   &kp S   &kp D           &kp F      &kp G      &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp PG_UP
-&kp END    &kp Z   &kp X   &kp C           &kp V      &kp B      &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp PG_DN
+&mo 1      &kp Z   &kp X   &kp C           &kp V      &kp B      &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &mo 2
                            &kp LEFT_SHIFT  &kp SPACE  &kp LCTRL  &kp LCTRL  &kp RET   &kp BSPC
                                            &kp DEL    &kp LALT   &kp RALT   &kp LGUI
+            >;
+        };
+
+        beta {
+            bindings = <
+&bootloader  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                             &trans  &trans  &trans  &trans  &trans  &trans
+                                     &trans  &trans  &trans  &trans
+            >;
+        };
+
+        gamma {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bootloader
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans  &trans  &trans  &trans
             >;
         };
     };
